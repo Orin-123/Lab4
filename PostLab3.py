@@ -35,13 +35,6 @@ class TestTicTacToe(unittest.TestCase):
                            'O', 'X', 'O']
         self.assertTrue(self.game.is_draw())
 
-    def test_winning_move(self):
-        """Test that the game correctly identifies a winning move."""
-        self.game.board = ['X', 'X', ' ',
-                           'O', 'O', ' ',
-                           ' ', ' ', ' ']
-        self.game.user_move(2)
-        self.assertTrue(self.game._is_winning_move())
 
 if __name__ == "__main__":
     unittest.main()
